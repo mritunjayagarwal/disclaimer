@@ -7,6 +7,7 @@
     <title>DEX</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body style = "background: #091f18">
@@ -15,16 +16,16 @@
         <div class="d-flex flex-column">
     
           <div class="profile">
-            <!-- <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle"> -->
-            <h1 class="text-light mt-4"><a href="index.html">Banner</a></h1>
+            <img src="./2.png" alt="" class="img-fluid rounded-circle">
+            <h1 class="text-light mt-4"><a href="index.html">Jared Dex</a></h1>
           </div>
     
           <nav id="navbar" class="nav-menu navbar">
             <ul>
-              <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-              <li><a href="#" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Swap</span></a></li>
-              <li><a href="#" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Trade</span></a></li>
-              <li><a href="#" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Wallet</span></a></li>
+              <!-- <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li> -->
+              <li><a href="#" class="nav-link scrollto"><i class="fa fa-exchange"></i> <span>Swap</span></a></li>
+              <li><a href="#" class="nav-link scrollto"><i class="fa fa-money"></i> <span>Staking</span></a></li>
+              <li><a href="#" class="nav-link scrollto"><i class="fa fa-dollar"></i><span>Liquidity</span></a></li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
@@ -32,9 +33,17 @@
     
 
     <main style = "margin-left: 150px; position: relative">
-        <div class="alert alert-success m-3" role="alert">
-            Disclaimer
+        <div class="alert alert-success m-3" style = "position: absolute;right: 0;" role="alert">
+          <p>1) Check your slippage </p>
+
+          <p>2) For 0 tax tokens </p>
+          <p>Min 0.1% Max 3%</p>
+          
+          <p>3) For tax tokens</p>
+          <p>Min: Tax + 1</p>
+          <p>Max: Tax + 3</p>
           </div>
+        <h1 class = "ml-2" style = "color: #75F15C"><span class="banner-logoname">/001 Jared DEX.</span></h1>
         <iframe id="onramper-widget" title="Onramper widget" frameborder="no" allow="accelerometer; autoplay; camera; gyroscope; payment;" src="https://app.uniswap.org/#/swap?theme=dark" style = "position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; height: 550px; width: 400px" class = "mt-5">
         </iframe>
     </main>
